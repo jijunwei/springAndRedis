@@ -1,0 +1,24 @@
+#header {
+    background:#3896d3 url("images/header_bg.jpg") no-repeat scroll right center;
+    height: 60px;
+    position: relative;
+    overflow:hidden;
+}
+#header .userinfo {
+    color: #ffffff;
+    padding-top: 5px;
+    float: right;
+    margin: 4px 8px;
+}
+
+#header .userinfo span, #header .userinfo a {
+    color: #FFFFFF;
+    padding: 6px 10px;
+}
+
+
+.datagrid-header .datagrid-cell span {
+    font-weight: bold;
+}
+/*16Äê6ÔÂ2ÈÕ*/
+.logo{width:261px; height:33px;background: url("images/base-logo.png") no-repeat 0 0; margin:15px 20px; float:left;}

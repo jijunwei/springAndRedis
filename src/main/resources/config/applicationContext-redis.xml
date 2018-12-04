@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 配置jedis连接池 -->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- 最大连接数 -->
+        <property name="maxTotal" value="30"/>
+        <!-- 最大空闲连接数 -->
+        <property name="maxIdle" value="10"/>
+        <!-- 每次释放连接的最大数目 -->
+        <property name="numTestsPerEvictionRun" value="1024"/>
+        <!-- 释放连接的扫描间隔（毫秒） -->
+        <property name="timeBetweenEvictionRunsMillis" value="30000"/>
+        <!-- 连接最小空闲时间 -->
+        <property name="minEvictableIdleTimeMillis" value="1800000"/>
+        <!-- 连接空闲多久后释放, 当空闲时间>该值 且 空闲连接>最大空闲连接数 时直接释放 -->
+        <property name="softMinEvictableIdleTimeMillis" value="10000"/>
+        <!-- 获取连接时的最大等待毫秒数,小于零:阻塞不确定的时间,默认-1 -->
+        <property name="maxWaitMillis" value="1500"/>
+        <!-- 在获取连接的时候检查有效性, 默认false -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 在空闲时检查有效性, 默认false -->
+        <property name="testWhileIdle" value="true"/>
+        <!-- 连接耗尽时是否阻塞, false报异常,ture阻塞直到超时, 默认true -->
+        <property name="blockWhenExhausted" value="false"/>
+    </bean>
+    <!-- jedisCluster -->
+    <bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
+        <!--  参数的name注入    redis.clients.jedis.JedisCluster中的方法(不带密码的，参数name是nodes)
+                public JedisCluster(Set<HostAndPort> nodes, int timeout) {
+                    this(nodes, timeout, DEFAULT_MAX_REDIRECTIONS);
+                }
+            设置了密码后需要用(参数name是 jedisClusterNode)，下面是JedisCluster源码中的一个构造方法：
+                     public JedisCluster(Set<HostAndPort> jedisClusterNode, int connectionTimeout, int soTimeout,
+                      int maxAttempts, String password, final GenericObjectPoolConfig poolConfig) {
+                            super(jedisClusterNode, connectionTimeout, soTimeout, maxAttempts, password, poolConfig);
+         }-->
+        <constructor-arg name="jedisClusterNode">
+            <set>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="127.0.0.1"/>
+                    <constructor-arg name="port" value="6379"/>
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="127.0.0.1"/>
+                    <constructor-arg name="port" value="6380"/>
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="127.0.0.1"/>
+                    <constructor-arg name="port" value="6381"/>
+                </bean>
+                <!--<bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="192.168.1.14"/>
+                    <constructor-arg name="port" value="7004"/>
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="192.168.1.15"/>
+                    <constructor-arg name="port" value="7005"/>
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg name="host" value="192.168.1.16"/>
+                    <constructor-arg name="port" value="7006"/>
+                </bean>-->
+            </set>
+        </constructor-arg>
+        <constructor-arg name="connectionTimeout" value="10000" type="int"/>
+        <constructor-arg name="soTimeout" value="10000" type="int"/>
+        <constructor-arg name="maxAttempts" value="200" type="int"/>
+        <constructor-arg name="password" value="foobared"/>  <!--集群  redis.conf的 requirepass  abc123   密码-->
+        <constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+    </bean>
+    <!-- jedis整合spring单机版 -->
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="destroy">
+        <!-- index注入的，依靠于;按照参数顺序一一对应	redis.clients.jedis.JedisPool中的方法
+　　　　　　　　public JedisPool(final GenericObjectPoolConfig poolConfig, final String host, int port,
+　　　　　　　　　　int timeout, final String password) {
+　　　　　　　　　　this(poolConfig, host, port, timeout, password, Protocol.DEFAULT_DATABASE, null);
+　　　　　}-->
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+        <constructor-arg index="1" value="localhost"/>
+        <constructor-arg index="2" value="6380" type="int"/>
+        <constructor-arg index="3" value="1500" type="int"/>
+        <constructor-arg index="4" value="foobared"/><!--redis.conf 中 requirepass 设置的密码-->
+
+        <!-- 源码 JedisPool 通过name注入依靠该方法
+　　　　　　public JedisPool(final GenericObjectPoolConfig poolConfig, final String host, final int port) {
+    　　　　　　　　this(poolConfig, host, port, Protocol.DEFAULT_TIMEOUT, null, Protocol.DEFAULT_DATABASE, null);
+　　　　　　}
+　　　　<constructor-arg name="host" value="127.0.0.1"/>
+　　　　<constructor-arg name="port" value="6380"/>
+　　　　<constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+　　　　-->
+    </bean>
+</beans>

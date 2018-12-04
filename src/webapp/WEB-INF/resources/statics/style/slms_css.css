@@ -1,0 +1,613 @@
+@CHARSET "UTF-8";
+.test-warp{
+    padding-left: 148px;
+    min-width: 1115px;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.creadit-gen{
+    width:270px;
+   /*  min-height:768px; */
+    background-color:#fff;
+    float: left;
+    margin-left: -148px;
+    height:100%;
+    border-right: 1px solid #D5D5D5;
+    
+}
+.workbench-left{
+	height: 50px;
+	margin-top: 10px;
+	margin-left:70px;
+}
+.genter {
+    width:100%;
+    height:35px;
+    color:#173a56;
+    font-size: 16.5px;
+    line-height: 35px;
+
+}
+.genter  i{
+    width:14px; 
+    height:13px;
+    display: inline-block;
+    background: url("images/creadit-ico.png") no-repeat 0 -12px ;
+
+
+}
+.genter i.gen-i{margin:11px 12px 0 29px;background: url("images/creadit-ico.png") no-repeat 0 -109px ;width:16px; 
+    height:16px;cursor: pointer;}
+.creadit-gen ul li{
+    width:100%;
+    height:auto;
+    margin-top:15px;
+}
+.creadit-gen ul li a{
+    display: block;
+    width:100%;
+    height:auto;
+    text-align: center;
+
+}
+
+.creadit-gen ul li p{
+    color:#173a56;
+    font-size: 14px;
+    line-height:25px;
+    text-align: center;
+}
+
+#creadit-gen div{position: relative; width:50px; height:auto;}
+
+#creadit-gen div i{top:-8px; width:16px; height:16px;display: inline-block;position: absolute; left:30px;}
+ i.crea-i{
+	width:16px; 
+	height:16px;
+	display: inline-block;
+	position: absolute;
+	background: url(images/creadit-ico.png) no-repeat 0 -126px;
+	top:-8px;
+	left:30px;
+	 }
+.creadit-gen ul li a div.l1{
+	width:50px; 
+	height:41px;
+	/* background:url("images/stroe_img01.png") no-repeat 0 0 ; */
+	}
+.creadit-gen ul li a div.l2{
+	width:50px; 
+	height:41px;
+	background:url("images/store_img02.png") no-repeat 0 0 ;
+	}
+.creadit-gen ul li a div.l3{
+	width:50px; 
+	height:50px;
+	background:url("images/store_img03.png") no-repeat 0 0 ;
+	}
+.creadit-gen ul li a div.l4{
+	width:50px; 
+	height:47px;
+	background:url("images/store_img04.png") no-repeat 0 0 ;
+	}
+.creadit-gen ul li a div.l5{
+	width:50px; 
+	height:50px;
+	background:url("images/img-creadit06.png") no-repeat 0 0 ;
+	}
+.creadit-gen ul li a div.l6{
+	width:50px; 
+	height:41px;
+	background:url("images/img-creadit07.png") no-repeat 0 0 ;
+	}
+.creadit-gen ul li a div.l7{
+	width:50px; 
+	height:50px;
+	background:url("images/store_img05.png") no-repeat 0 0 ;
+	}
+.check-right h1{color:#3b5469; font-size:16px; width:96%; border-bottom:1px solid #eeeeee; height:44px; line-height:44px; margin:0 auto;}
+.check-right h2{font-size:15.5px; height:35px; color:#3b5469;}
+.check-right h2 i{margin-top:20px; margin-left:23px; margin-right:5px;}
+.check-right h2 span{padding-top:8px;}
+.check-right ul{width:876px; height:auto; margin:0 auto;}
+.check-right ul li{width:290px; height:20px; float:left; margin-top:8px;}
+.check-right ul li i{width:20px; height:20px; display:inline-block; background: url("images/creadit-ico.png") no-repeat 0 -164px ; float:left;}
+.check-right ul li i.tru{ background: url("images/creadit-ico.png") no-repeat 0 -144px ;}
+.check-right ul li span{ color:#646464; font-size:14.5px;  float:left; padding-top:2px; diaplay:inline-block; width:auto;}
+.check-right h1 span{color:#f14332;}
+.btn-div{width:925px; height:44px; margin:0 auto;}
+input[type="button"].btn1,input[type="button"].btn2{margin-top:7px;width:65px; height:30px; background-color:#4ea1d8;border-radius:3px; color:#fefcfc; font-size:14px; border:1px solid #82bde3; margin-left:5px; }
+input[type="button"].btn2{background-color:#fff; color:#4ea1d8; margin-left:15px;}
+input[type="button"].btn1:hover{background-color:#318ac4;}
+.creadit-cen{
+    width:48.2%;
+    height:auto;
+    float: left;
+    margin-left:20px;
+    margin-top:19px;
+}
+.creadit-cen span.more,.creadit-cen input[type="button"]{
+	width:auto;
+	padding-left:20px;
+	padding-right:20px;
+    height:25px;
+    display: inline-block;
+    background-color: #f3f3f3;
+    color: #3b5469;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: normal;
+    margin-top:11px;
+    margin-right:8px;
+    cursor: pointer;
+}
+
+.creadit-cen i.fewer{
+    width:11px;
+    height:7px;
+    display: inline-block;
+    background: url("images/creadit-ico.png") no-repeat 0 0 ;
+    margin-top:22px;
+    margin-right:20px;
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+.roud{
+	-webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   transform: rotate(360deg);}
+.creadit-cen table{
+    width:100%;
+    height:auto;
+
+}
+.creadit-cen table tr td{
+    width:33%;
+    height:41px;
+    color:#676a6c;
+    font-size: 13px;
+}
+.creadit-cen table tbody tr{border-top: 1px solid #e7eaec;border-bottom: 1px solid #e7eaec;}
+.creadit-cen table thead tr{
+    color:#454545;
+    font-size: 13px;
+    font-weight: bold;
+    border:1px solid #f2f4f5;
+    border-top-color:#e2e2e2;
+    border-bottom-color:#e7eaec;
+    border-left: none;
+    border-right: none;
+}
+.creadit-cen table tr td.t1 {
+    text-indent:45px;
+    width:32%;
+}
+.creadit-cen table tr td.t2{
+    width:37%;
+    text-indent:50px;
+}
+.creadit-cen table tr td.t3{
+    width:33%;
+    text-align:center;
+}
+.creadit-cen table tr td.t4{
+    width:72%;
+    text-indent: 50px;
+}
+.creadit-cen table tr td.t5{
+	width:29%;
+	text-indent: 35px;
+}
+.creadit-cen table tr td.t6{
+    width:37%;
+    text-indent:0;
+}
+.h45{
+    height:48px;
+    line-height: 48px;
+}
+.h52{
+    height:52px;
+    line-height: 52px;
+}
+.h57{
+    height:57px;
+    line-height: 57px;
+}
+.h55{
+    height:55px;
+    line-height: 55px;
+}
+.even{
+    background-color: #f9f9f9;
+}
+.hw2018{
+    margin:20px 5px 0px 18px;
+}
+.creadit-cen-warp{
+    width:100%;
+    float: right;
+    margin-left:-148px;
+
+}
+.path{
+    width:100%;
+    height:50px;
+    background-color:#887e7d;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+.path ul li{
+    width:117px;
+    height:50px;
+    background-color:#605655;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    font-size: 14px;
+    color:#f3f3f4;
+    cursor: pointer;
+    float: left;
+}
+.path ul li i{
+    width: 10px ;
+    height:10px;
+    display: block;
+    background: url("images/creadit-ico.png") no-repeat 0px -95px ;
+    position: absolute;
+    right:3px;
+    top: 3px;
+}
+.path ul li:hover{background-color:#524948;}
+.creadit-cen i.ico-new{
+    background:url("images/creadit-ico.png") no-repeat 0 -77px;
+    width:41px;
+    height:17px;
+    display: block;
+    top:4px;
+    left:127px;
+}
+.creadit-cen-w{border: 1px solid #D5D5D5;background-color:#fff;}
+
+.creadit-tab{
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
+.creadit-tab ul li{
+    cursor: pointer;
+    width:120px;
+    height:45px;
+    float: left;
+    margin-right:5px;
+    border:1px solid #D5d5d5;
+    background-color:#f9f9f9;
+    text-align: center;
+    line-height: 45px;
+    color:#173a56;
+    font-size: 14px;
+
+
+}
+.creadit-tab ul li.curr{
+    border-bottom:1px solid #fff;
+    background-color:#fff;
+}
+.creadit-top-bor{
+    border-top:none;
+}
+.creadit-store-s span{
+    width:100px;
+    height:25px;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color:#173a56;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+    margin-top:14px;
+    cursor: pointer;
+}
+.creadit-store-s span.curr{
+    background-color:#e7e7e7;
+    color:#3681c0;
+}
+.mgl35{margin-left:35px;}
+.mgb10{margin-bottom:11px;}
+.creadit-cen table.creadit-store-table{
+    height:50px;
+}
+.creadit-cen table.creadit-store-table tr{
+    height:45px;
+    color:#454545;
+    font-size: 14px;
+    font-weight: normal;
+}
+.creadit-cen-w p.loan{
+    width:100%;
+    height:55px;
+    line-height: 55px;
+    color:#454545;
+    font-size: 14px;
+}
+.creadit-cen-w p.loan i{
+    width:16px;
+    height:12px;
+    display: inline-block;
+    margin-top:15px;
+    background: url("images/img_creadit01.png") no-repeat 0 0;
+    margin-left: 35px;
+    margin-right:5px;
+}
+.creadit-cen-w ul.loan-ul{
+    width:100%;
+    height:auto;
+}
+.creadit-cen-w ul.loan-ul li{
+    float: left;
+    color:#454545;
+    font-size: 14px;
+}
+.creadit-cen-w ul.loan-ul li.l1{
+    width:30%;
+    text-indent: 35px;
+    text-align: left;
+}
+.creadit-cen-w ul.loan-ul li.l2{
+    width:24%;
+    text-align: left;
+}
+.creadit-cen-w ul.loan-ul li.l3{
+    width:22%;
+    text-align: left;
+}
+.border-top{
+    border-top: 1px solid #D5D5D5;
+}
+.creadit-cen-w ul.loan-ul li a:hover{
+    color:#3681c0;
+    cursor: pointer;
+}
+.h57 span{ margin-top:16px;}
+.h55 span{margin-top:15px;}
+.creadit-cen table thead tr td{height:40px;}
+.creadit-cen table.table-h55 thead tr{height:55px;}
+.creadit-cen-w ul.remind-ul{
+    border-top: 1px solid #e7eaec;
+    width: 100%;
+    height: auto;
+    padding:15px 0 18px 0 ;
+}
+.creadit-cen-w ul.remind-ul li{
+    float: left;
+    color:#454545;
+    font-size: 14px;
+}
+.creadit-cen-w ul.remind-ul li.l1{
+    width:28%;
+    text-indent: 35px;
+    text-align: left;
+}
+.creadit-cen-w ul.remind-ul li.l2{
+    width:36%;
+    text-align: left;
+}
+.creadit-cen-w table a:hover{
+    color:#3681c0;
+    cursor: pointer;
+}
+.tab_ww table tr td{height:43px;}    
+.creadit-cen table tbody tr:nth-of-type(odd){background-color: #f3f3f3;}/*奇数行*/
+.inf-tt1 tr td {font-weight:600; color:#666666;}
+.inf-tt1 tr td a{color:#666666;}
+.inf-tt1 tr td.cli{font-weight: normal; color:#999999;}
+.creadit-cen table thead tr.lin-t{border-top:1px solid #fff;}
+.tem-tab1,.tem-tab2{ height:373px;}
+.tab-h2{height:339px;}
+.tab_ww1,.tab_ww2,.tab_ww3{height:302px; overflow:hidden;}
+.ta-h3{height:740px;}
+.genter i.add-i{ width:16px; height:16px;}
+#checkadd ul li input[type=checkbox] {
+            display: none;
+           
+}
+
+#checkadd ul li input[type=checkbox] + label {
+            background-color: #FFF;
+            border: 1px solid #C1CACA;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            width:14px;
+            height: 14px;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            margin-right: 7px;
+            float:left;
+}
+ #checkadd ul li input[type=checkbox] + label:active {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+#checkadd ul li input[type=checkbox]:checked + label {
+            background-color: #3b97d4;
+            border: 1px solid #92A1AC;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+            color: #243441;
+            background:url("images/dui_03.jpg") no-repeat 0 0 ;
+}
+
+#checkadd ul li input[type=checkbox]:checked + label:after {
+            /* content: '\2714'; //勾选符号 */
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            color: #758794;
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+            /*padding: 1px 0 0 0;*/
+            vertical-align: text-top;
+            text-align: center;
+            
+ }
+
+ .mgt7{margin-top:7px;} 
+ .right{z-index: 2;} 
+ .tab-h1 table td{height:42px;} 
+ .td-h tbody tr td{height:42px;}
+ .tab-h1{height:735px;}
+ .tab-h1 table td{height:40px;} 
+ .td-h tbody tr td{height:40px;}
+ .creadit-tab ul li.flush{float:right; margin-right:0px; background-color: rgb(237, 237, 237); border:1px solid #ededed; line-height:20px; }
+  .ltt{left: 736px;top: -44px; display:none;}
+  .ltt1{left: 609px;top: -44px; display:none;}
+  .ltt2{left: 482px;top: -44px; display:none;}
+  .show-tt{display:block;}
+  .flush-d{width:60px; height:25px; background-color:#f9f9f9; border-radius: 2px; position: relative; line-height:22px; text-align:center;}
+  .flush-img img.roat{-webkit-animation:circle 0.65s  infinite linear	;animation:circle 0.65s  infinite linear;-moz-animation:circle 0.65s  infinite linear; /* Firefox */
+   -webkit-animation:circle 0.65s infinite linear; /* Safari and Chrome */-o-animation:circle 0.65s  infinite linear; /* Opera */}
+  .flush-img img.stop{-webkit-animation:circle1;/*匀速 循环*/animation:circle1;-moz-animation:circle1; /* Firefox */-webkit-animation:circle1; /* Safari and Chrome */
+  -o-animation:circle1; /* Opera */}
+  .flush-img{width:auto; height:25px;background-color: #f3f3f3;}
+  .flush-img-col{background-color: #f8f8f8;}
+   @-webkit-keyframes circle{
+   0%{ transform:rotate(0deg); }
+   100%{ transform:rotate(360deg); }
+  }
+  @-webkit-keyframes circle1{
+   0%{ transform:rotate(0deg); }
+   100%{ transform:rotate(0deg); }
+  }
+  #checkAllDatasddd{}
+  .checkAllDatasddd{ width:95px; float:right; font-size:13px;font-weight: normal; color: #3b5469; }
+  .checkAllDatasdddCar{ width:95px; float:right; font-size:13px;font-weight: normal; color: #3b5469; }
+  .loadPostLoanddd{width:95px; float:right; font-size:13px;font-weight: normal; color: #3b5469; }
+  .flush-w{position:absolute; left:-71px; top:0px;display: none;}
+  .flush-l,.flush-r{float:left; }
+  .flush-l{font-weight: normal; width:60px; background-color:#abb7c1; color:#ffffff;height:26px; font-size:13px; line-height:26px; border-radius: 2px;}
+  .mgr5{margin-right:5px;}
+  .mgt11{margin-top:11px;}
+  li {
+    line-height: 27px;
+}
+.lttabc{
+    left: 660px;
+      top: -90px;
+}
+.fr2 {
+	position: relative;
+    left: 736px;
+   top: -44px;
+   display: inline-block;
+}
+.lttab {
+    left: 530px;
+    top: -90px;
+    display: none;
+}
+
+.fr2c {
+    position: relative;
+    left: 608px;
+    top: -44px;
+       display: inline-block;
+}
+/*信贷，门店*/
+.creadit-tab2{
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
+.creadit-tab2 ul li{
+    cursor: pointer;
+    width:120px;
+    height:45px;
+    float: left;
+    margin-right:5px;
+    border:1px solid #D5d5d5;
+    background-color:#f9f9f9;
+    text-align: center;
+    line-height: 45px;
+    color:#173a56;
+    font-size: 14px;
+
+
+}
+.creadit-tab2 ul li.curr{
+    border-bottom:1px solid #fff;
+    background-color:#fff;
+}
+.border-bs{border-bottom:1px solid #d5d5d5;}
+  .marbot20{margin-bottom:30px;}
+  .creadit-cen table.table-h55 thead tr.h64{height:70px;}
+  .h55 span.mei{margin-top:0px;}
+  
+ @media screen and (max-device-width:1280px){.creadit-cen {margin-left: 13px;}}
+ @media screen and (max-device-width:1440px){.creadit-cen {margin-left: 15px;} .right{width:755px; height:535px;}}
+ @media screen and (max-device-width:1366px){
+ .creadit-cen table.table-h55 thead tr.h64{height:54px;}
+ .creadit-cen {margin-left: 14px;} 
+ .creadit-tab ul li{height:32px; line-height:32px;}
+ .creadit-tab2 ul li{height:32px; line-height:32px;}
+ .creadit-cen table thead tr td{height:30px;}
+ .tab_ww table tr td{height:28px;}
+ .tab_ww1, .tab_ww2, .tab_ww3{height:243px; overflow:hidden;}
+ .h45{height:32px; line-height:32px;}
+ .creadit-cen table.table-h55 thead tr{height:43px;}
+ .creadit-cen-w p.loan{height:41px;line-height:41px;}
+ .creadit-cen-w ul.loan-ul li{font-size: 12px;}
+ .creadit-cen table tr td{height:29px; font-size:12px;}
+ .pdb20{padding-bottom: 20px;}
+
+ .creadit-cen-w ul.loan-ul li{line-height:25px;}
+ .hw2018{margin: 11px 5px 0px 18px;}
+ .genter{font-size:14px;}
+ .creadit-cen span.more,.creadit-cen input[type="button"]{margin-top:4px; height:24px; line-height:24px;}
+ .creadit-cen-w p.loan i{margin-top:12px;}
+ .creadit-cen i.fewer{margin-top:14px;}
+ .tem-tab1,.tem-tab2{ height:148px;}
+ .creadit-cen{ margin-top:16px;}
+ .test-warp{height:600px; min-height:500px;}
+ .creadit-gen{min-height:500px;}
+ .tab-h2{height:203px;}
+ .td-h tbody tr td{height:28px;}
+ .ta-h3{height:450px;}
+  .tab-h1{height:446px;}
+  .tab-h1 tabke td{height:30px;}
+  .creadit-gen ul li{margin-top:13px;}
+  .creadit-gen ul li p{height:29px; line-height:normal; font-size:12px;}
+  .ltt{left:488px; top: -35px;}
+  .ltt1{left: 360px; top: -35px;}
+  .ltt2{left: 231px; top: -35px;}
+  .flush-d{margin-top:3px; height:23px; line-height:21px;}
+  .lttabc {
+    left: 420px;
+    top: -81px;
+  }
+  .fr2 {
+    position: relative;
+    left: 492px;
+    top: -44px;
+    display: inline-block;
+	}
+
+  .lttab {
+    left: 290px;
+    top: -81px;
+  }
+  .fr2c {
+    position: relative;
+    left: 364px;
+    top: -44px;
+    display: inline-block;
+	}
+	
+	
+  }
+  
+     
